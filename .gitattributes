@@ -1,0 +1,7 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+music_data/** filter=lfs diff=lfs merge=lfs -text
+music_data/artist_ids.json filter=lfs diff=lfs merge=lfs -text
+music_data/artist_ids_IN.json filter=lfs diff=lfs merge=lfs -text
+music_data/data_artists.json filter=lfs diff=lfs merge=lfs -text
+music_data/data_artists_IN.json filter=lfs diff=lfs merge=lfs -text
