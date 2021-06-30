@@ -80,19 +80,24 @@ def artist_plot(i_, artist_data):
                 item = complete_albums[j_]['tracks'][k_]['features'][0]
 
                 if complete_albums[j_]['album_name'] != 'Ultraviolence - Audio Commentary':
-
-                    if item['loudness'] >= loudest_track:
+                    try:
                         loudest_track = item['loudness']
                         loudest_track_name = complete_albums[j_]['tracks'][k_]['track_name']
                         loudest_track_id = complete_albums[j_]['tracks'][k_]['track_id']
-
-                    artist_tracks_loudness.append(item['loudness'])
-                    artist_tracks_danceability.append(item['danceability'])
-                    artist_tracks_speechiness.append(item['speechiness'])
+                    except Exception:
+                        loudest_track_name = complete_albums[j_]['tracks'][k_]['track_name']
+                        loudest_track_id = complete_albums[j_]['tracks'][k_]['track_id']
+                
                     try:
+                        artist_tracks_loudness.append(item['loudness'])
+                        artist_tracks_danceability.append(item['danceability'])
+                        artist_tracks_speechiness.append(item['speechiness'])
                         album_color.append(p[j_])
                         color_[complete_albums[j_]['album_name']] = p[j_]
-                    except IndexError:
+                    except Exception:
+                        artist_tracks_loudness.append(-30)
+                        artist_tracks_danceability.append(0)
+                        artist_tracks_speechiness.append(0)
                         album_color.append('red')
                         color_[complete_albums[j_]['album_name']] = 'red'
         
