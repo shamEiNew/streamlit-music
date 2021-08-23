@@ -10,8 +10,11 @@ The following image displays the tracks and album data from a western artist Emi
 The first graph displays danceability (a metric which measures how much you can tap your toe on the track) and acousticness of that track. And the second graph consists of popularity of albums of that particular artist and the top-left corner consists of popular albums and popular track of that artist.
 The following images popular albums of Prateek Kuhad.
 ### Albums of AR Rahman
+
 ![Popular Albums of AR Rahman](https://drive.google.com/uc?export=view&id=1Su-Ebb1cq9DLZAO4P5drIT6VeMVP1V32)
+
 ![Track Acoustics and Danceability](https://drive.google.com/uc?export=view&id=13MsuGiNrihR2WrIhEnUY6557q2xcp3hL)
+
 ![Popular albums/tracks of Prateek Kuhad](https://drive.google.com/file/d/1eRfVjxC6LV7zZz9KezcXE8CmaHKTiKQ2/view)
 
 !['Deducing Popular album of Eminem'](https://github.com/shamEiNew/musicplot/blob/master/ims/Eminem.png)
